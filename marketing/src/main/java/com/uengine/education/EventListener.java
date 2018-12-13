@@ -16,7 +16,7 @@ public class EventListener {
 
         System.out.println("<이메일 발송>");
         System.out.println("제목: " + clazzDayRegistered.getInstructorName() +" 강사의 OOO강의 [마감임박]");
-        System.out.println("** 기념품 증정:  10만원상당의 음성인식 스피커 **");
+        System.out.println("** 기념품 증정:  50만원상당의 음성인식 스피커 **");
 
 
     }
