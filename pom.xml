@@ -25,6 +25,8 @@
 		<module>calendar</module>
 		<module>marketing</module>
 
+		<module>proxy-service</module>
+		<module>registry-service</module>
 	</modules>
 
 
@@ -52,8 +54,6 @@
 
 	</dependencyManagement>
 
-
-
 	<dependencies>
 
 		<dependency>
@@ -74,6 +74,11 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-feign</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
 
 
@@ -119,6 +124,10 @@
 			<artifactId>spring-cloud-starter-stream-kafka</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-zuul</artifactId>
+		</dependency>
 	</dependencies>
 
 
@@ -168,7 +177,7 @@
 					</plugin>
 					<plugin>
 						<artifactId>maven-clean-plugin</artifactId>
-						<version>2.5</version>
+						<!--version>2.5</version-->
 						<executions>
 							<execution>
 								<id>auto-clean</id>
