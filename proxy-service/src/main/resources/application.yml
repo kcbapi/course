@@ -51,3 +51,20 @@ eureka:
   instance:
     statusPageUrlPath: ${server.servletPath}info
     healthCheckUrlPath: ${server.servletPath}health
+
+
+
+hystrix:
+  threadpool:
+    default:
+      coreSize: 1000
+      maximumSize: 10000
+      queueSizeRejectionThreshold: -1
+      maxQueueSize: -1
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: THREAD
+          thread:
+            timeoutInMilliseconds: 41000
