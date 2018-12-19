@@ -34,6 +34,8 @@ endpoints:
     sensitive: false
 
 ribbon:
+  # NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
+  # listOfServers: http://example1.com,http://example2.com
   MaxAutoRetries: 1
   MaxAutoRetriesNextServer: 1
   OkToRetryOnAllOperations: true
