@@ -24,6 +24,10 @@ zuul:
       path: /schedules/**
       serviceId: calendar
       stripPrefix: false
+    marketing:  #TODO
+      path: /marketing/**
+      serviceId: marketing
+      stripPrefix: false
 
 endpoints:
   routes:

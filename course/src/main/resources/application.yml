@@ -1,6 +1,6 @@
----
 spring:
-  profiles: local
+  application:
+    name: course
   cloud:
     stream:
       kafka:
