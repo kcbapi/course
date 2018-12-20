@@ -40,7 +40,7 @@ ribbon:
   MaxAutoRetriesNextServer: 1
   OkToRetryOnAllOperations: true
   ServerListRefreshInterval: 2000
-  ConnectTimeout: 10000
+  ConnectTimeout: 60000
   ReadTimeout: 60000
 
 eureka:
@@ -69,4 +69,4 @@ hystrix:
         isolation:
           strategy: THREAD
           thread:
-            timeoutInMilliseconds: 60000
+            timeoutInMilliseconds: 61000
