@@ -41,7 +41,7 @@ ribbon:
   OkToRetryOnAllOperations: true
   ServerListRefreshInterval: 2000
   ConnectTimeout: 10000
-  ReadTimeout: 10000
+  ReadTimeout: 60000
 
 eureka:
   client:
@@ -69,4 +69,4 @@ hystrix:
         isolation:
           strategy: THREAD
           thread:
-            timeoutInMilliseconds: 41000
+            timeoutInMilliseconds: 60000
