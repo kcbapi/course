@@ -4,7 +4,7 @@ server:
 eureka:
   instance:
     hostname: eureka-server
-    preferIpAddress: false
+    preferIpAddress: true
   client:
     registerWithEureka: false
     fetchRegistry: false
@@ -12,3 +12,9 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
   server:
     enableSelfPreservation: false
+
+spring:
+  cloud:
+    inetutils:
+      preferred-networks:
+        - 10.0

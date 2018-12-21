@@ -16,23 +16,23 @@ zuul:
   routes:
     courses:
       path: /courses/**
-      #serviceId: courses
-      url: http://10.0.2.15:8087
+      serviceId: courses
+      #url: http://10.0.2.15:8087
       stripPrefix: false
     clazzes:
       path: /clazzes/**
-      #serviceId: courses
-      url: http://10.0.2.15:8087
+      serviceId: courses
+      #url: http://10.0.2.15:8087
       stripPrefix: false
     calendar:
       path: /schedules/**
-      #serviceId: calendar
-      url: http://10.0.2.15:8088
+      serviceId: calendar
+      #url: http://10.0.2.15:8088
       stripPrefix: false
     marketing:
       path: /marketing/**
-      #serviceId: marketing
-      url: http://10.0.2.15:8089
+      serviceId: marketing
+      #url: http://10.0.2.15:8089
       stripPrefix: false
 
 endpoints:
