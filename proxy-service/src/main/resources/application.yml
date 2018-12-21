@@ -8,23 +8,25 @@ server:
   servletPath: /
 
 zuul:
+  debug:
+    request: true
   ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
   addProxyHeaders: true
 
   routes:
     courses:
       path: /courses/**
-      serviceId: course
+      serviceId: courses
       stripPrefix: false
     clazzes:
       path: /clazzes/**
-      serviceId: course
+      serviceId: courses
       stripPrefix: false
-    calendar:  #TODO
+    calendar:
       path: /schedules/**
       serviceId: calendar
       stripPrefix: false
-    marketing:  #TODO
+    marketing:
       path: /marketing/**
       serviceId: marketing
       stripPrefix: false
