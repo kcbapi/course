@@ -5,7 +5,7 @@ eureka:
   instance:
     hostname: eureka-server
     preferIpAddress: false
-    instanceId: ${random.int}
+    instanceId:  ${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:
     registerWithEureka: false
     fetchRegistry: false
@@ -13,9 +13,3 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
   server:
     enableSelfPreservation: false
-
-spring:
-  cloud:
-    inetutils:
-      preferredNetworks:
-        - 10.0
