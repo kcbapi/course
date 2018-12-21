@@ -45,6 +45,7 @@ ribbon:
 
 eureka:
   client:
+    enabled: true
     serviceUrl:
       defaultZone: http://eureka-server:8761/eureka/
 #      defaultZone: ${eureka_url}
