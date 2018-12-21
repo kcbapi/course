@@ -5,7 +5,6 @@ eureka:
   instance:
     hostname: eureka-server
     preferIpAddress: false
-    instanceId:  ${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:
     registerWithEureka: false
     fetchRegistry: false
