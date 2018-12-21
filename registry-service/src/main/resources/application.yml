@@ -5,7 +5,7 @@ eureka:
   instance:
     hostname: eureka-server
     preferIpAddress: true
-    instance-id: ${random.int}
+    instanceId: ${random.int}
   client:
     registerWithEureka: false
     fetchRegistry: false
@@ -17,5 +17,5 @@ eureka:
 spring:
   cloud:
     inetutils:
-      preferred-networks:
+      preferredNetworks:
         - 10.0
