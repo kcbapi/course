@@ -4,7 +4,7 @@ server:
 eureka:
   instance:
     hostname: eureka-server
-    preferIpAddress: true
+    preferIpAddress: false
   client:
     registerWithEureka: false
     fetchRegistry: false
@@ -13,8 +13,8 @@ eureka:
   server:
     enableSelfPreservation: false
 
-spring:
-  cloud:
-    inetutils:
-      preferredNetworks:
-        - 10.0
+#spring:
+#  cloud:
+#    inetutils:
+#      preferredNetworks:
+#        - 10.0

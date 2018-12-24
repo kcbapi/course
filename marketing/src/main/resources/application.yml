@@ -21,6 +21,7 @@ eureka:
     healthcheck:
       enabled: true
   instance:
+#    hostname: ${spring.application.name}
     instanceId:  ${spring.application.name}:${random.value}
     statusPageUrlPath: ${server.servletPath}info
     healthCheckUrlPath: ${server.servletPath}health
