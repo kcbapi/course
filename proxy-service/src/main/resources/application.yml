@@ -28,7 +28,7 @@ zuul:
       path: /schedules/**
       #serviceId: calendar
       url: http://10.0.2.15:8088
-      stripPrefix: falsez
+      stripPrefix: false
     marketing:
       path: /marketing/**
       #serviceId: marketing
