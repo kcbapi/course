@@ -26,7 +26,7 @@ eureka:
   instance:
     hostname: ${spring.application.name}
     preferIpAddress: false
-    instanceId:  ${spring.application.name}:${random.value}
+    instanceId:  ${spring.application.name}:${spring.application.instance_id:${server.port}}
     statusPageUrlPath: ${server.servletPath}info
     healthCheckUrlPath: ${server.servletPath}health
     metadataMap:
