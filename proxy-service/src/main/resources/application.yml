@@ -58,7 +58,7 @@ eureka:
     healthcheck:
       enabled: true
   instance:
-#    hostname: ${spring.application.name}
+    hostname: ${HOSTNAME}
     preferIpAddress: false
     instanceId:  ${spring.application.name}:${random.value}
     statusPageUrlPath: ${server.servletPath}info
