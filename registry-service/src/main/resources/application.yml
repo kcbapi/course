@@ -13,14 +13,14 @@ eureka:
   server:
     enableSelfPreservation: false
 
-spring:
-  cloud:
-    inetutils:
-      ignored-interfaces:
-        - eth0
-        - eth1
-        - eth2
-        - eth3
-        - lo
-      preferredNetworks:
-        - 10.0
+#spring:
+#  cloud:
+#    inetutils:
+#      ignored-interfaces:
+#        - eth0
+#        - eth1
+#        - eth2
+#        - eth3
+#        - lo
+#      preferredNetworks:
+#        - 10.0

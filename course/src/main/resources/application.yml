@@ -11,13 +11,14 @@ spring:
         class-topic:
           destination: class.topic
           contentType: application/json
-    inetutils:
-      ignored-interfaces:
-        - eth0
-        - eth1
-        - eth2
-        - eth3
-        - lo
+#    inetutils:
+#      ignored-interfaces:
+#        - eth0
+#        - eth1
+#        - eth2
+#        - eth3
+#        - lo
+
 server:
   port: 8087
   servletPath: /
